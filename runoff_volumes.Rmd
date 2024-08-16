@@ -1,0 +1,24 @@
+---
+title: "runoff_volumes.Rmd"
+author: "Amanda Overbye"
+date: "2024-08-16"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+## R Markdown
+```{r}
+library(tidyverse)
+library(here)
+```
+
+```{r}
+here::here("docs", "storm_runoff.R")
+```
+
+```{r}
+Rv <- (0.05 + 0.9)
+predict_runoff (Rv, Ia)
+```
+
+
